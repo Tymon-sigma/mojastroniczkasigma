@@ -1,37 +1,37 @@
-/* Resetowanie marginesów, odstępów i domyślnych ustawień */
+
 *,
 *::after,
-*::before {
+*::before 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-/* Styl nawigacji */
+
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: #0000ff; /* Niebieskie tło */
+    background-color: #0000ff; 
 }
 
 nav > a {
     text-decoration: none;
     margin: 15px;
-    color: #ff0000; /* Czerwony kolor */
+    color: #ff0000; 
     font-weight: bold;
     font-size: 20px;
 }
 
 nav > a:hover {
-    color: #cccccc; /* Szary po najechaniu */
+    color: #cccccc;
 }
 
 nav > a:active {
-    color: #aaaaaa; /* Jaśniejszy szary po kliknięciu */
+    color: #aaaaaa;
 }
 
-/* Styl nagłówka */
+
 header {
     width: 100%;
     height: 400px;
@@ -53,7 +53,7 @@ header > .motto {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #adff2f; /* Kolor żółto-zielony */
+    color: #adff2f; 
     font-size: 2rem;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -70,7 +70,7 @@ header > .motto > p {
     margin: 10px 0;
 }
 
-/* Styl dla sekcji kategorii */
+
 .kategorie {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -104,8 +104,8 @@ header > .motto > p {
     transform: translateX(-50%);
     margin: 0;
     padding: 10px;
-    background-color: #ff0000; /* Czerwone tło */
-    color: #ffffff; /* Biały tekst */
+    background-color: #ff0000; 
+    color: #ffffff; 
     font-size: 1.5rem;
     border-radius: 5px;
 }
@@ -118,7 +118,7 @@ header > .motto > p {
     transform: scale(1.05);
 }
 
-/* Styl dla hitów modowych */
+
 .hity {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -174,7 +174,7 @@ header > .motto > p {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Styl stopki */
+
 footer {
     display: flex;
     justify-content: center;
@@ -188,7 +188,7 @@ footer > p {
     font-size: 20pt;
 }
 
-/* Responsywność */
+
 @media (max-width: 768px) {
     .kategorie {
         grid-template-columns: repeat(2, 1fr);
